@@ -13,7 +13,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "eslint . && jest"
   },
   "files": [
     "index.js"
@@ -22,9 +22,13 @@
     "boilerplate",
     "template"
   ],
-  "dependencies": {},
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "babel-jest": "25.1.0"
+  },
   "devDependencies": {
-    "ava": "^3.5.1",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-config-standard": "14.1.1",
@@ -35,7 +39,8 @@
     "eslint-plugin-sonarjs": "0.5.0",
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-unicorn": "17.2.0",
+    "esm": "3.2.25",
     "jest": "25.1.0",
-    "xo": "^0.28.0"
+    "prettier": "2.0.1"
   }
 }

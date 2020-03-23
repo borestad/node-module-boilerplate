@@ -1,13 +1,20 @@
-import test from 'ava';
-import unicornFun from '.';
+import unicornFun from ".";
 
-test('main', t => {
-	t.throws(() => {
-		unicornFun(123);
-	}, {
-		instanceOf: TypeError,
-		message: 'Expected a string, got number'
-	});
+test("main", (t) => {
+  t.throws(
+    () => {
+      unicornFun(123);
+    },
+    {
+      instanceOf: TypeError,
+      message: "Expected a string, got number",
+    }
+  );
 
-	t.is(unicornFun('unicorns'), 'unicorns & rainbows');
+  t.is(unicornFun("unicorns"), "unicorns & rainbows");
+});
+
+it("works with resolves", () => {
+  expect(true).toBe(true);
+  // expect.assertions(1);
 });

@@ -57,7 +57,7 @@ const rules = {
       settings: {
         'import/extensions': extensions.all,
         'import/parsers': {
-          '@typescript-eslint/parser': extensions.ts
+          // '@typescript-eslint/parser': extensions.ts
         },
         'import/resolver': {
           node: { extensions: extensions.all }
@@ -68,7 +68,7 @@ const rules = {
 
       extends: [
         // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-        'plugin:@typescript-eslint/recommended',
+        // 'plugin:@typescript-eslint/recommended',
 
         // https://github.com/SonarSource/eslint-plugin-sonarjs
         'plugin:sonarjs/recommended',
@@ -81,7 +81,7 @@ const rules = {
 
         // Uses eslint-config-prettier to disable ESLint rules from
         // @typescript-eslint/eslint-plugin that would conflict with prettier
-        'prettier/@typescript-eslint',
+        // 'prettier/@typescript-eslint',
 
         // Turns off all rules that are unnecessary or might conflict with Prettier.
         // https://github.com/prettier/eslint-config-prettier/blob/master/standard.js
@@ -118,7 +118,7 @@ const rules = {
       // Overrides
       overrides: [
         {
-          files: ['*.spec.*', '*.test.*', '*.e2e.*', 'test.*'],
+          files: ['*.spec.*', '*.test.*', '*.e2e.*', 'test.*', 'test.js'],
           rules: {
             // Keep tests simple & clean
             'padding-line-between-statements': [
@@ -209,34 +209,34 @@ const rules = {
          * https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
          * ----------------------------------------------------
          */
-        '@typescript-eslint/ban-types': OFF,
-        '@typescript-eslint/no-floating-promises': OFF, // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/464
-        '@typescript-eslint/camelcase': ['error', { properties: 'never' }],
-        '@typescript-eslint/no-non-null-assertion': OFF,
-        '@typescript-eslint/no-use-before-define': [
-          'error',
-          { functions: false, variables: false }
-        ],
-        '@typescript-eslint/explicit-function-return-type': OFF,
-        '@typescript-eslint/explicit-member-accessibility': [
-          'error',
-          { accessibility: 'no-public' }
-        ],
-        '@typescript-eslint/no-var-requires': OFF,
-        '@typescript-eslint/no-parameter-properties': OFF,
-        '@typescript-eslint/no-explicit-any': OFF,
-        '@typescript-eslint/consistent-type-assertions': 'error',
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          {
-            vars: 'all',
-            varsIgnorePattern: '^[_$]|[_$]$',
-            args: 'after-used',
-            caughtErrors: 'none',
-            ignoreRestSiblings: true,
-            argsIgnorePattern: '^[_$]'
-          }
-        ],
+        // '@typescript-eslint/ban-types': OFF,
+        // '@typescript-eslint/no-floating-promises': OFF, // TODO: https://github.com/typescript-eslint/typescript-eslint/issues/464
+        // '@typescript-eslint/camelcase': ['error', { properties: 'never' }],
+        // '@typescript-eslint/no-non-null-assertion': OFF,
+        // '@typescript-eslint/no-use-before-define': [
+        //   'error',
+        //   { functions: false, variables: false }
+        // ],
+        // '@typescript-eslint/explicit-function-return-type': OFF,
+        // '@typescript-eslint/explicit-member-accessibility': [
+        //   'error',
+        //   { accessibility: 'no-public' }
+        // ],
+        // '@typescript-eslint/no-var-requires': OFF,
+        // '@typescript-eslint/no-parameter-properties': OFF,
+        // '@typescript-eslint/no-explicit-any': OFF,
+        // '@typescript-eslint/consistent-type-assertions': 'error',
+        // '@typescript-eslint/no-unused-vars': [
+        //   'error',
+        //   {
+        //     vars: 'all',
+        //     varsIgnorePattern: '^[_$]|[_$]$',
+        //     args: 'after-used',
+        //     caughtErrors: 'none',
+        //     ignoreRestSiblings: true,
+        //     argsIgnorePattern: '^[_$]'
+        //   }
+        // ],
 
         /**
          * Import Plugin Rules
