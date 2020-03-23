@@ -1,4 +1,7 @@
 {
+  "name": "node-module-boilerplate",
+  "author": "Johan Borestad",
+  "module": "dist/node-module-boilerplate2.esm.js",
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -25,13 +28,10 @@
   },
   "prettier": {
     "printWidth": 80,
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "node-module-boilerplate2",
-  "author": "Johan Borestad",
-  "module": "dist/node-module-boilerplate2.esm.js",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "husky": "^4.2.3",
