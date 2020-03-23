@@ -1,0 +1,146 @@
+// This file contains Visual Studio Code workspace settings
+// to be used for sharing settings between team members.
+
+// It has carefully been crafted to allow proper use
+// of "eslint.autoFixOnSave" for .js(x) and .ts(x), without
+// conflicting with other formatters like prettier/tslint etc.
+{
+  // ⬇ important ⬇
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[properties]": {
+    "editor.formatOnSave": false
+  },
+  // ⬇ important ⬇
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // ⬇ important ⬇
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ⬇ important ⬇
+  "[jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on"
+  },
+  // ⬇ important ⬇
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  // ⬇ important ⬇
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": null
+  },
+  // ⬇ important ⬇
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // ⬇ important ⬇
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.autoIndent": "full",
+  // ⬇ important ⬇
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  "editor.codeLens": true,
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": false,
+  "editor.quickSuggestions": {
+    "comments": true,
+    "other": true,
+    "strings": true
+  },
+  "editor.snippetSuggestions": "bottom",
+  "editor.renderIndentGuides": true,
+  "eslint.alwaysShowStatus": true,
+  // ⬇ important ⬇
+  "eslint.packageManager": "yarn",
+  // ⬇ important ⬇
+  "extensions.ignoreRecommendations": false,
+  // ⬇ important ⬇
+  "files.associations": {
+    "*.css": "css",
+    ".*b*": "shellscript",
+    ".*rc": "properties",
+    ".*z*": "shellscript",
+    ".gitattributes": "gitconfig",
+    ".eslintrc": "jsonc"
+  },
+  "files.exclude": {
+    ".gitignore": false,
+    ".vscode": false,
+    "**/.*cache*": true,
+    "**/.code/**": true,
+    "**/.nyc_output": true,
+    "**/.pnp*": true,
+    "**/.tmp": true,
+    "**/*.log": true,
+    "**/node_modules/**": true,
+    "**/reports": true,
+    "**/build": true,
+    "**/dist": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/*.log": true,
+    "**/.*cache*": true,
+    "**/.code/**": true,
+    "**/.git/**": true,
+    "**/.tmp*/**": true,
+    "**/coverage/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true
+  },
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "problems.decorations.enabled": true,
+  "search.exclude": {
+    "**/.tmp": true,
+    "**/build": true,
+    "**/coverage/**": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/reports": true
+  },
+  "search.smartCase": true,
+  "tslint.ignoreDefinitionFiles": true,
+  "tslint.jsEnable": false,
+  "typescript.autoClosingTags": true,
+  "typelens.decorateunused": true,
+  "typescript.implementationsCodeLens.enabled": false,
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // TODO: Experimental usage
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggest.autoImports": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.paths": true,
+  "typescript.suggestionActions.enabled": false,
+  "typescript.suggest.completeJSDocs": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "merge-conflict.decorators.enabled": true,
+  "typescript.preferences.renameShorthandProperties": true
+}
